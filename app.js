@@ -97,8 +97,6 @@ function sumArray(sumArr) { //eslint-disable-line
   var sumArraySum = sum(onePlusTwo[0], numThree);
 
   var sumArrayString = numOne+','+numTwo+','+numThree+' was passed in as an array of numbers, and '+sumArraySum[0]+' is their sum.';
-  console.log(sumArrayString);
-  console.log(sumArraySum[0], sumArrayString);
   return [sumArraySum[0], sumArrayString];
   
 }
