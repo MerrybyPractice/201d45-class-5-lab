@@ -95,13 +95,14 @@ function sumArray(sumArr) { //eslint-disable-line
 
   var onePlusTwo = sum(numOne, numTwo);
   var sumArraySum = sum(onePlusTwo[0], numThree);
-  console.log(sumArraySum);
+
   var sumArrayString = numOne+','+numTwo+','+numThree+' was passed in as an array of numbers, and '+sumArraySum[0]+' is their sum.';
-
-  return sumArrayString;
-
+  console.log(sumArrayString);
+  console.log(sumArraySum[0], sumArrayString);
+  return [sumArraySum[0], sumArrayString];
+  
 }
-
+console.log(sumArray);
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
